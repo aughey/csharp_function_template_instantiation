@@ -6,7 +6,7 @@ Func<double, double> myfunc = MultipleByTwo;
 var type = myfunc.GetType();
 var wrapped = CreateDelegate(myfunc);
 
-Evaluate(myfunc, 3.14);
+Evaluate(wrapped, 3.14);
 
 double MultipleByTwo(double x) => x * 2;
 
